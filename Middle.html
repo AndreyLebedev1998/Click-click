@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click-click</title>
+    <link rel="icon" href="Red curcle.ico">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .middle {
+        background-color: rgb(230, 206, 161);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="dark">Темная</p>
+    <p class="bright">Светлая</p>
+    <button class="rule">Правила</button>
+    <dialog class="descriptionWindow">
+      <p class="description">
+        После нажатия кнопки "Начать" на игровом поле появится красный(белый) шарик,
+        который будет двигаться с определённым интервалом времени. Ваша задача
+        успеть за 30 секунд нажать на шарик как можно больше раз.
+      </p>
+      <p class="descriptionOne">
+        Вы можете выбрать один из трёх уровней сложности: Легкий, Средний и
+        Сложный.
+        <br />
+        <br />
+        На Легком уровне интервал движения шарика - 2.5 секунды.
+        <br />
+        На Среднем уровне интервал движения шарика - 1.5 секунды.
+        <br />
+        На Сложном уровне интервал движения шарика - 1 секунда
+        <br />
+        <br />
+        <p class="descriptionTwo">Удачи!</p>
+      </p>
+      <button class="cover">Закрыть</button>
+      <button class="further">Далее</button>
+      <button class="back">Назад</button>
+    </dialog>
+    <div class="timer">30</div>
+    <p class="specs">Очки</p>
+    <p class="number">0</p>
+    <div class="game">
+      <a class="light" href="Light.html"><p>Легкий</p></a>
+      <p class="middle">Средний</p>
+      <a class="hard" href="Hard.html"><p>Сложный</p></a>
+    </div>
+    <p class="gamechange">Уровень сложности</p>
+    <button class="start" id="startt">Начать</button>
+    <button class="theend">Закончить</button>
+    <div class="area">
+      <div class="curcle" class="a"></div>
+    </div>
+    <dialog class="end">
+      <p>Вы набрали</p>
+      <p class="numberShowModal">0</p>
+      <p>очков</p>
+      <div class="closee"><button class="close">Закрыть</button></div>
+    </dialog>
+    <script src="middleSript.js"></script>
+  </body>
+</html>
